@@ -1,0 +1,122 @@
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    /* COLORS */
+    --TEXT-COLOR:transparent;
+    --STROKE-COLOR:rgb(71,36,98);
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    width: 1200px;
+    height: 600px;
+    background-image: url(https://static.vecteezy.com/system/resources/previews/000/517/088/original/vector-landscape-illustration.png);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+    background-size: cover;
+    position: relative;
+    display: flex; /* Add display flex to main */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center;
+}
+
+#nav{
+    /* background-color: red; */
+    position: sticky;
+    height: 90px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem;
+    z-index: 1;
+}
+
+#nav a{
+    text-decoration: none;
+    color: rgb(251,219,203);
+    font-weight: 100;
+    letter-spacing: 0.1em;
+}
+
+#nav a:hover{
+    color: white;
+}
+
+#tittle{
+    position: absolute;
+    left: 50%;
+    top: 51%;
+    transform: translate(-50%, -50%);
+    width: 45%;
+    height: 60%;
+    /* background-color: red; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#tittle h1{
+    font-size: 85px;
+    text-transform: uppercase;
+    letter-spacing: 0.01em;
+    font-weight: 900;
+    overflow: hidden;
+    filter: drop-shadow(-1px -1px 30px var(--STROKE-COLOR));
+
+}
+
+#tittle h1 span:hover{
+    color: var(--TEXT-COLOR);
+
+}
+
+#one{
+    display: inline-block;
+    transform: translateX(-270px);
+    margin-right: 25px;
+    -webkit-text-stroke: 2px var(--STROKE-COLOR);
+    color: var(--STROKE-COLOR);
+}
+
+#two{
+    display: inline-block;
+    transform: translateX(350px);
+    -webkit-text-stroke: 1px var(--STROKE-COLOR);
+    color: var(--STROKE-COLOR);
+}
+
+#three{
+    display: inline-block;
+    transform: translateZ(-1000px) scale(0);
+    opacity: 0;
+    -webkit-text-stroke: 2px var(--STROKE-COLOR);
+    color: var(--STROKE-COLOR);
+}
+
+
+#tittle h3{
+    display: inline-block;
+    color: var(--STROKE-COLOR);
+    filter: drop-shadow(1px 1px 30px var(--STROKE-COLOR));
+    transition: translate 0.3s ease-in-out ;
+    transform: translateZ(500px) scale(3);
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+#tittle h3:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+}

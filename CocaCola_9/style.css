@@ -1,0 +1,203 @@
+@import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Poppins:wght@500&family=Roboto:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #171717;
+}
+
+main{
+    width: 1400px;
+    height: 675px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: black;
+}
+#nav{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+#nav h4{
+    font-family: poppins;
+    font-size: 14px;
+    font-weight: 550;
+
+}
+
+#nav h4 i{
+    margin-right: 20px;
+}
+
+#navmid{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: blue; */
+    width: 68%;
+    padding: 0 10px;
+    height: fit-content;
+    margin-right: 50px;
+}
+
+#navmid img{
+    width: 150px;
+    height:inherit ;
+}
+
+#line{
+    width: 90px;
+    height: 2px;
+    background-color: red;
+}
+
+#content{
+    width: 100%;
+    height: calc(100% - 100px);
+    /* background-color: aquamarine; */
+    display: flex;
+}
+
+#left{
+    width: 37%;
+    height: 100%;
+    position: relative;
+    /* background-color: blue; */
+    font-family: poppins; 
+    padding: 120px 60px;
+}
+
+#left h1{
+    font-size: 48px;
+    font-family: poppins;
+    width: 95%;
+    margin-bottom: 25px;
+    font-weight: 900;
+    line-height: 55px;
+}
+
+#left h1 span {
+    color: red;
+    font-weight: 100;
+}
+#left p{
+    width:80%;
+    font-size: 13px;
+    line-height: 23px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+#left button{
+    background-color: red;
+    padding: 10px 25px;
+    border: 1px solid red   ;
+    border-radius: 50px;
+    font-family: poppins;
+    font-weight: 20;
+    font-size: 14px;
+    color: white;
+}
+
+#left>i{
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+    margin-left: 10px;
+}
+
+#left button i{
+    margin-right: 10px;
+}
+
+#center{
+    width: 26%;
+    height: 100%;
+    /* background-color: red; */
+    position: relative;
+}
+
+#centerbg{
+    position: absolute;
+    border-top-left-radius: 1000px;
+    border-top-right-radius: 1000px;
+    top: 7%;
+    width: 100%;
+    height: 83%;
+    background-image: url(https://www.coca-cola.com/content/dam/onexp/xf/en/homepage/carousel/ar_coca-cola_header05_desktop_coca-cola-acquires-costa-coffee_1440x810_v1.jpg);
+    background-position:-250px 0;
+    background-size: 350%;
+    filter:blur(2px);
+}
+
+main>img{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%,-0.5%);
+    height: calc(100% - 45px);
+}
+#right{
+    position: relative;
+    width: 37%;
+    height: 100%;
+    padding-top: 235px;
+    padding-left: 70px;
+    padding-right: 60px;
+}
+
+#rightcontent{
+    width: 85%;
+    height: 80%;
+    font-family: poppins;
+     margin-top: 10px;} 
+
+#right h3{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 12px;
+    padding-left: 5px;
+    margin-bottom: 12px;
+    border-bottom: 0.02px solid white;
+    opacity: 75%;
+}
+
+#right h3:nth-child(3){
+    opacity: 100%;
+    border: none;
+    margin-bottom: 2px;
+}
+
+#right p{
+    width: 90%;
+    font-size: 11px;
+    opacity: 75%;
+    margin-left: 5px;
+}
+
+#right h4 i{
+    border: 1px solid white;
+    padding: 10px 10px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+#right h4 {
+    opacity: 75%;
+    margin-top: 35px;
+    margin-left: 5px;
+}

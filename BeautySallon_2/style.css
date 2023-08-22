@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(171,142,152);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#main{
+    display: flex;
+    width: 1300px;
+    min-height: 650px;
+    background-color: rgb(192,165,172);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.4);
+
+}
+
+#part1{
+    width:25%;
+    min-height: 100%;
+}
+#part2{
+    background-image: url(https://images.unsplash.com/photo-1623039497550-c4f2ccc7b875?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80);
+    background-size: cover;
+    background-position: bottom;
+    width:60%;
+    min-height: 100%;
+}
+
+#overlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0 ,0.5);
+}
+#part3{
+    width:15%;
+    min-height: 100%;
+}
+
+#text_div{
+    display: flex;
+    flex-flow: column nowrap;
+    position: absolute;
+    left: 10%;
+    top: 54%;
+    transform: translate(0,-50%);
+    width: fit-content;
+    min-height: fit-content;
+    position: absolute;
+}
+
+#text_div h1{
+    font-size: 95px;
+    letter-spacing: 5px;
+    line-height: 78px;
+    text-transform: uppercase;
+    color: white;
+    -webkit-text-stroke: 6px;
+    -webkit-text-stroke-color: white;
+    line-height: 96px;
+    letter-spacing: 0.1em;
+    text-shadow:0 5px 10px rgba(0, 0, 0 ,0.6) ;
+}
+
+#small_img{
+    position: absolute;
+    left: 75%;
+    top: 50%;
+    transform: translate(0,-50%);
+    width: 200px;
+    min-height: 350px;
+    background-image: url(https://images.unsplash.com/photo-1623039497550-c4f2ccc7b875?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1887&q=80);
+    background-size: cover;
+    background-position: bottom;
+    z-index: 1;
+}
+
+#overlay_small{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0 ,0.3);
+}
+
+#rotated_text{
+    position: absolute;
+    color: transparent;
+    width: fit-content;
+    min-height: fit-content;
+    transform: rotate(90deg);
+    top: 44%;
+    left: 67%;
+    z-index: 1;
+}
+
+#rotated_text h1{
+    font-size: 75px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: white;
+}
+
+#name{
+    position: absolute;
+    left: 21%;
+    top: 20%;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 0.2em;
+}
+
+#logo{
+    position: absolute;
+    top: 8%;
+    left: 10%;
+    width: 100px;
+    height: 100px;
+    background-image: url(https://www.pinclipart.com/picdir/big/29-296673_beauty-clipart.png);
+    background-size: cover;
+}
+
+/* media query 1 */
+@media (max-width:480px){
+
+    html,body{
+        width: 100%;
+    }
+    #main{
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        box-shadow: none;
+        background-color: rgb(171,142,152);
+    }
+    #part1{
+        width:100%;
+        min-height: 21vh;
+    }
+    #part2{
+        width:100%;
+        min-height: 60vh;
+        background-position: bottom;
+    }    
+    #part3{
+        width:100%;
+        min-height: 40vh;
+    }
+    #text_div{
+        width: fit-content;
+        top: 52%;
+        left: 5%;
+    }
+    #text_div h1{
+      font-size: 14vw; 
+      opacity: 90%;       
+    }
+    #small_img{
+        left:25%;
+        transform: translate(0,85%);
+        margin-top: 50px;
+        width: 250px;
+        min-height: 350px;
+    }
+    #rotated_text{
+        width: fit-content;
+       left: 1%;
+       top: 90%;
+       transform: rotate(0deg);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    #rotated_text h1{
+        font-size: 11vw;
+    }
+    #name{
+        left:40%;
+        top: 8%;
+    }
+    #name h3{
+     font-size: 5vw;
+    }
+    #logo{
+        top: 3%;
+        left: 4%;
+        width: 100px;
+        height: 100px;
+    }
+}
+/* media query 2 */
+@media (max-width:768px){
+
+    html,body{
+        width: 100%;
+    }
+    #main{
+        height: 100vh;
+        width: 100%;
+        flex-direction: column;
+        box-shadow: none;
+        background-color: rgb(171,142,152);
+    }
+    #part1{
+        width:100%;
+        min-height: 21vh;
+    }
+    #part2{
+        width:100%;
+        min-height: 70vh;
+        background-position: bottom;
+    }    
+    #part3{
+        width:100%;
+        min-height: 40vh;
+    }
+    #text_div{
+        width: fit-content;
+        top: 52%;
+        left: 5%;
+    }
+    #text_div h1{
+      font-size: 14vw; 
+      opacity: 90%;       
+    }
+    #small_img{
+        left:50%;
+        transform: translate(-50%,85%);
+        width: 250px;
+        min-height: 350px;
+    }
+    #rotated_text{
+        width: fit-content;
+       left: 1%;
+       top: 90%;
+       transform: rotate(0deg);
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    #rotated_text h1{
+        font-size: 11vw;
+    }
+    #name{
+        left:40%;
+        top: 8%;
+    }
+    #name h3{
+     font-size: 5vw;
+    }
+    #logo{
+        top: 3%;
+        left: 3%;
+        width: 100px;
+        height: 100px;
+    }
+}
