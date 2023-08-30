@@ -213,6 +213,9 @@ font-size: 14px;
 }
 
 @media (max-width: 500px) {
+    body {
+        overflow-x: hidden;
+    }
     main {
         width: 100%;
         min-height: 100vh;
@@ -221,6 +224,9 @@ font-size: 14px;
     main>img{
     height: 100vw;
 }
+    #nav{
+     margin-top: 30px;
+   }
     #navmid h4 {
         display: none;
     }
