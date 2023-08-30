@@ -33,6 +33,15 @@ main{
     padding: 0 20px;
 }
 
+#navL{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#navL i{
+font-size: 14px;
+}
+
 #nav h4{
     font-family: poppins;
     font-size: 14px;
@@ -127,8 +136,11 @@ main{
 
 #center{
     width: 26%;
-    height: 100%;
+    height: auto;
     /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
 }
 
@@ -136,7 +148,6 @@ main{
     position: absolute;
     border-top-left-radius: 1000px;
     border-top-right-radius: 1000px;
-    top: 7%;
     width: 100%;
     height: 83%;
     background-image: url(https://www.coca-cola.com/content/dam/onexp/xf/en/homepage/carousel/ar_coca-cola_header05_desktop_coca-cola-acquires-costa-coffee_1440x810_v1.jpg);
@@ -145,12 +156,11 @@ main{
     filter:blur(2px);
 }
 
-main>img{
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%,-0.5%);
-    height: calc(100% - 45px);
+#center>img{
+    max-height: calc(105% - 2px);
+    width: auto;
+    margin-top: 8vh;
+    z-index: 2;
 }
 #right{
     position: relative;
@@ -200,4 +210,74 @@ main>img{
     opacity: 75%;
     margin-top: 35px;
     margin-left: 5px;
+}
+
+@media (max-width: 500px) {
+    main {
+        width: 100%;
+        min-height: 100vh;
+        background-color: black;
+    }
+    main>img{
+    height: 100vw;
+}
+    #navmid h4 {
+        display: none;
+    }
+    #navmid #line {
+        display: none;
+    }
+    #navL h4 {
+        display: none;
+    }
+    #navmid{
+        margin-left: 10vw;
+        justify-content: center
+    }
+    
+   #nav .ri-menu-line,
+        .ri-search-line{
+            font-size: 18px;
+         }
+
+    #content{
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        background-color: black;
+    }     
+    #left{
+        padding: 20px 20px;
+        width: 100%;
+        height: 55vh;
+    }
+    #left h1{
+        font-size: 10vw;
+        line-height: 9vh;
+    }
+    #left p{
+        font-size: 3vw;
+    }
+    #left button{
+        font-size: 2.5vw;
+    }
+    #center{
+        width: 100%;
+        height: 65vh;
+        display: flex;
+        justify-content: center;
+    }
+    #centerbg{
+        width: 60vw;
+        height: 55vh;
+    }
+    #right{
+        width: 100%;
+        height: 55vh;
+        padding: 50px 20px;
+    }
+    #rightcontent{
+         margin-left: 10px;
+        } 
+    
 }
