@@ -218,7 +218,7 @@ font-size: 14px;
         min-height: 100vh;
         background-color: black;
         overflow-x: hidden;
-        margin-top: 30px;
+        margin-top: 5px;
     }
     main>img{
     height: 100vw;
