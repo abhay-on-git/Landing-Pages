@@ -218,13 +218,11 @@ font-size: 14px;
         min-height: 100vh;
         background-color: black;
         overflow-x: hidden;
+        margin-top: 100px;
     }
     main>img{
     height: 100vw;
 }
-    #nav{
-     margin-top: 150px;
-   }
     #navmid h4 {
         display: none;
     }
