@@ -223,7 +223,7 @@ font-size: 14px;
     height: 100vw;
 }
     #nav{
-     margin-top: 90px;
+     margin-top: 150px;
    }
     #navmid h4 {
         display: none;
@@ -263,7 +263,7 @@ font-size: 14px;
         font-size: 3vw;
     }
     #left button{
-        font-size: 2.5vw;
+        font-size: 3vw;
     }
     #center{
         width: 100%;
