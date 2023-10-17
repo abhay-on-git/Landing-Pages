@@ -17,7 +17,7 @@
 # Learnings.
 
 ## By Building these Landing pages I Build the Concepts in Core technologies if an Web Developement. Such As follows
- Html
- Css
- Javascript
- GSAP
+### Html
+### Css
+### Javascript
+### GSAP
