@@ -12,3 +12,12 @@
 ### [Fashion](https://abhay-on-git.github.io/Landing-Pages/Fashion_3)👈
 ### [Nature](https://abhay-on-git.github.io/Landing-Pages/Nature_4)👈
 ### [Illustrative](https://abhay-on-git.github.io/Landing-Pages/illustrative_7)👈
+
+
+# Learnings.
+
+## By Building these Landing pages I Build the Concepts in Core technologies if an Web Developement. Such As follows
+### Html
+### Css
+### Javascript
+### GSAP
