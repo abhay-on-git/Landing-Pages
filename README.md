@@ -16,7 +16,7 @@
 
 # Learnings.
 
-## By Building these Landing pages I Build the Concepts in Core technologies if an Web Developement. Such As follows
+## By Building these Landing pages I Build the Concepts in Core technologies of Web Developement are Such As follows
 ### Html
 ### Css
 ### Javascript
