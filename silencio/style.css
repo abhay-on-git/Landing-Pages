@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Satoshi', sans-serif;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+main{
+    width: 100%;
+    height: 100vh;
+}
+.pg1{
+    position: relative;
+    padding-top: 7vw;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    background-color: aliceblue;
+}
+#firsth3{
+    position:absolute;
+    left: 8%;
+    top: 60%;
+}
+.pg1 img{
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    width: 500px;
+    height: 450px;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation: movingimg 5s ease forwards;
+    transform-origin: bottom;
+}
+#img1{
+    position: absolute;
+    left: 80%;
+    top: 65%;
+    transform: translate(-50%,-50%);
+    width: 350px;
+    height: 250px;
+    animation: img1 5s ease forwards;
+    transform-origin: bottom;
+}
+@keyframes movingimg {
+    0%{
+        transform: rotate( 0deg);
+    }
+    25%{
+        transform: rotateX(-25deg);
+        
+    }
+    50%{
+        transform: rotateX(-20deg);
+    }
+    75%{
+        transform: rotateZ(15deg);
+    }
+    
+}
+@keyframes img1 {
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotateX(25deg);
+    }
+    50%{
+        transform: rotateX(-25deg);
+    }
+    75%{
+        transform: rotateZ(-15deg);
+    }
+    100%{
+        transform: translateY(-5vw);
+    }
+    
+}
+.pg1 h1{
+    font-size: 8vw;
+    font-weight: 500;
+    line-height: 8vw;
+    text-align: center;
+    overflow: hidden;
+
+}
+.pg1 h1 span{
+    display: inline-block;
+    width: 85px;
+    height: 110px;
+    background-image: url(https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Z2lybHxlbnwwfHwwfHx8MA%3D%3D);
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+    background-color: red;
+}
+.pg1 h2{
+    margin-top: 2vw;
+    font-size: 2.5vw;
+}
+#lefth2{
+    position: absolute;
+    font-size: 2.1vw;
+    letter-spacing: 0.1em;
+    top: 20%;
+    left: -34.5%;
+    transform: rotate(-90deg);
+}
+.p{
+    width: 50%;
+    height: 8vw;
+    margin: 2vw auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    /* background-color: yellow; */
+}
+.p p{
+    text-align: left;
+    width: 40%;
+}
